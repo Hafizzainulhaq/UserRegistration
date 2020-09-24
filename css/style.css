@@ -1,0 +1,206 @@
+*,html,body{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	
+}
+ 
+.outer-box{
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	width: 400px;
+	height: auto;
+	transform: translate(-50%, -50%) scale(0)  ;
+	border:2px solid #339966;
+	border-radius: 5px;
+	display: flex;
+	flex-flow: column;
+	
+	
+	
+	
+	
+}
+.inner-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: auto;
+	transform: translate(-50%, -50%) ;
+	border:2px solid #339966;
+	border-radius: 5px;
+	display: flex;
+	flex-flow: column;
+	
+	
+	
+}
+.title{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding: 5px;
+	color: #fff;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	background-color: #339966;
+}
+.registration{
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 5px;
+	
+}
+
+.inputs{
+	display: flex;
+	flex-direction: row;
+}
+
+.inputbox{
+	width: 100%;
+	padding: 15px;
+	box-sizing: border-box;
+	position: relative;
+	
+}
+.inputbox input{
+	width: 100%;
+	padding: 8px 5px;
+	box-sizing: border-box;
+	border:none;
+	border-bottom: 2px solid #339966;
+	outline: none;
+	background: none;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.1em;
+}
+.inputbox label{
+	position: absolute;
+	color: #fff;
+	opacity: 0.5;
+	pointer-events: none;
+	font-family: 'Roboto', sans-serif;
+	left: 5%;
+	top: 35%;
+	transition: .5s;
+	
+	
+}
+.inputbox input:focus + label , input:valid + label{
+	top: 5px;
+}
+#eye{
+	position: absolute;
+	color: #339966;
+	right: 25px;
+	top: 25px;
+	cursor: pointer;
+
+	
+}
+#eye-login{
+	position: absolute;
+	color: #339966;
+	right: 25px;
+	top: 25px;
+	cursor: pointer;
+	z-index: 9999;
+}
+ 
+
+.buttons{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.tologin, .forsignup{	
+	width: 50%;
+	border:2px solid #339966;
+	outline: none !important;
+	font-family: 'Roboto', sans-serif;
+	background-color: #339966;
+	display: block;
+	padding: 10px;
+	box-sizing: border-box;
+	color:#fff;
+	font-weight: bold;
+	cursor: pointer;
+	
+	
+}
+.tologin{
+	background: none;
+	
+}
+.tologin:hover{
+	background-color: #339966;
+	opacity: .7;
+	
+}
+.forsignup:hover{
+	background-color: #339966 !important;
+	opacity: .7;
+	
+}
+
+.forgotpassword{
+	width: 100%;
+	display: flex;
+	box-sizing: border-box;
+	justify-content: flex-end;
+	color: #339966;
+	padding-right: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.forgotpassword button{
+	color: #339966;
+	background: none;
+	border: none;
+	outline: none !important;
+	cursor: pointer;
+	
+}
+
+.forgotbox{
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	display: none;
+	
+	
+
+
+}
+
+.forgotform{
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+
+
+}
+
+.message{
+	color: #339966;
+	margin:0px;
+	font-size: 1.2em;
+	box-shadow: 0px 0px 5px #339966;
+	border-radius: 5px;
+	font-family: 'Roboto', sans-serif;
+	
+}
+.message p{
+
+	margin:5px 10px;
+}

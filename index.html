@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registeration</title>
+    <!--bootstrap v-4.0 css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--Style CSS-->
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    
+    
+</head>
+
+<body style="background-color: #003333;">
+
+
+<!--for signup-->
+<!--content block-->
+<div class="outer-box">
+	<div class="title">
+		<h2>SignUp</h2>
+	</div><!--title end-->
+	<div class="registration">
+		<div  class="message"></div><!--message-->
+		<form method="post" action="" enctype="multipart/form-data" id="registerform" class="registerform">
+			<div class="inputs">
+			<!--firstname-->
+			<div class="inputbox">
+				<input type="text" name="fname" id="fname" class="inputfield"
+				required="">
+				<label class="label" id="labelfname" style="left: 8%;">First Name</label>
+				
+			</div><!--inputbox end-->
+			
+			<!--last name-->
+			
+			<div class="inputbox">
+				<input type="text" name="lname" id="lname" class="inputfield" required="">
+				<label class="label" id="labellname" style="left: 8%;">Last Name</label>
+			</div><!--inputbox end-->
+			</div><!--inputs-->
+
+			<div class="inputs">
+			<!--user name-->
+			
+			<div class="inputbox">
+				<input type="text" name="username" id="username" class="inputfield" required="">
+				<label class="label" id="labelusername" style="left: 8%;">Username</label>
+			</div><!--inputbox end-->
+			
+			
+			
+			
+			<!--for email-->
+			<div class="inputbox">
+				<input type="email" name="email" id="email" class="inputfield" required="">
+				<label class="label" id="labelemail" style="left: 8%;">Email</label>
+			</div><!--inputbox end-->
+			</div><!--inputs-->
+
+			<!--for phone-->
+			<div class="inputbox">
+				<input type="text" name="phone" id="phone" class="inputfield" required=""> 
+				<label class="label" id="labelphoneno">Phone No</label>
+			</div><!--inputbox end-->
+			
+			<div class="inputs">
+			<!--for password-->
+			<div class="inputbox">
+				<input type="password" name="pass" id="pass" class="inputfield" required="">
+				<label class="label" id="labelpass" style="left: 8%;">Password</label>
+				 <i class="fa fa-eye " onclick="changeText()" id="eye"></i>
+			</div><!--inputbox end-->
+			
+			<!--for confrim pasas-->
+			<div class="inputbox">
+				<input type="password" name="cpass" id="cpass" class="inputfield" required="">
+				<label class="label" id="labelcpass" style="left: 8%;">Confirm Password</label>
+				
+			</div><!--inputbox end-->
+			</div><!--inputs end-->
+			<!--buttons-->
+			<div class="buttons">
+				<button type="button" name="tologin" class="tologin" id="tologin" onclick="resetRegForm()">Login</button>
+				<button type="submit" name="forsignup" class="forsignup" id="forsignup">SignUp</button>
+			</div><!--buttons-->
+			
+			
+		</form><!--form end-->
+	</div><!--regitsration end-->
+</div><!--outer-box end-->
+
+
+<!--for login-->
+<div class="inner-box">
+	<div class="title">
+		<h2>Login</h2>
+	</div><!--title end-->
+	<div class="registration">
+		<div  class="message"></div><!--message-->
+		<form method="post" action="" enctype="multipart/form-data" id="loginform" class="loginform">
+		
+		
+			<!--user name-->
+			
+			<div class="inputbox">
+				<input type="text" name="username" id="loginusername" class="inputfield" required="">
+				<label class="label" id="labelloginusername">Username</label>
+			</div><!--inputbox end-->
+		
+			
+			<!--for password-->
+			<div class="inputbox">
+				<input type="password" name="pass" id="loginpass" class="inputfield" required="">
+				<label class="label" id="labelloginpass">Password</label>
+				 <i class="fa fa-eye " onclick="changeLoginPassType()" id="eye-login"></i>
+			</div><!--inputbox end-->
+			
+			<!--forgot password-->
+			<div class="forgotpassword">
+				<button type="button" name="password-btn" id="forgot-password-btn">Forgot Password?</button>
+			</div>
+
+			
+			<!--buttons-->
+			<div class="buttons">
+				<button type="submit" name="login-btn" class="tologin" id="forlogin" style="background-color: #339966;">Login</button>
+				<button type="button" name="forsignup" class="forsignup" id="tosignup" style="background-color: #003333;">SignUp</button>
+			</div><!--buttons-->
+			
+			
+		</form><!--form end-->
+		
+	</div><!--regitsration end-->
+
+	<div class="forgotbox">
+
+				<span class="fa fa-time"></span>
+				<div class="forgotform">
+					<div  class="message"></div><!--message-->
+					<form method="post" action="" enctype="multipart/form-data" id="loginform" class="loginform">
+		
+		
+			<!--username-->
+			
+			<div class="inputbox">
+				<input type="text" name="username" id="forgotusername" class="inputfield" required="">
+				<label class="label" id="labelforgotusername">Username</label>
+			</div><!--inputbox end-->
+		
+			
+			<!--email-->
+			<div class="inputbox">
+				<input type="email" name="email" id="forgotemail" class="inputfield" required="">
+				<label class="label" id="labelforgotemail">Email</label>
+			</div><!--inputbox end-->
+
+			<div class="buttons">
+				<button type="submit" name="tologin" class="tologin" id="forgotbtn" style="background-color: #339966; width: 100%;">Send</button>
+			</div><!--buttons-->
+		</form>
+		</div><!--forgotform-->
+		</div><!--forgotbox-->
+</div><!--inner-box end-->
+
+<!--content block end-->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+	
+
+
+	
+	
+	
+
+		
+			
+
+</script>
+</body>
+
+</html>
